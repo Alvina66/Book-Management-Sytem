@@ -39,7 +39,7 @@ $query = mysqli_query($conn, $sql);
             <td><?php echo $row['id']; ?></td>
             <td><?php echo $row['title']; ?></td>
             <td><?php echo $row['author']; ?></td>
-            <td><a href="detail.php?id=<?php echo $row['id']; ?>">View Details</a></td>
+            <td><a href="detail.php?title=<?php echo $row['title']; ?>">View Details</a></td>
             <td><a href="update.php?id=<?php echo $row['id']; ?>">Edit</a></td>
             <td><a href="delete.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this book?')">Delete</a></td>
         </tr>

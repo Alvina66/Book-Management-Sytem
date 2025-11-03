@@ -10,7 +10,9 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM books WHERE id = " . $_GET["id"];
+$title = $_GET['title'];
+
+$sql = "SELECT * FROM books WHERE title = '$title'";
 
 $query = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($query);
