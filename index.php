@@ -28,6 +28,8 @@
             <input type="number" name="year" placeholder="e.g. 2024">
 
             <button type="submit">Add Book</button>
+            <br>
+            <br>
             <a class="btn" href="list.php">View Book List</a>
         </form>
     </div>
